@@ -2,9 +2,9 @@ from copy import deepcopy
 
 from collections import namedtuple, defaultdict
 try:
-    from collections import Mapping
-except ImportError:
     from collections.abc import Mapping
+except ImportError:
+    from collections import Mapping
 
 PROPERTY = 1
 GETTER = 0
